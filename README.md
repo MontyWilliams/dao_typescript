@@ -8,6 +8,10 @@ node --version
 yarn --version
 ```
 
+# Before installing dependencies
+note that installing dependancies using the --dev flag makes it available for the contracts to see during compilation.
+Without it you wont be able to use the open openzepplin dir 
+
 # Setup project
 
 install hardhat as dev dep
