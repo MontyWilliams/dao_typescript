@@ -26,7 +26,7 @@ next creat contracts folder in root dir. this is where hardhat will be configure
 for contract (notice the diff in deploy methods from truffle, it comes down to byte code compilatoin and 
 how they are diff in each tool) 
 #--------------------------------------------
-The contract requires openzepplin so add it then compile (make sure config setting are ok) with;
+The contract require openzepplin so add it then compile (make sure config setting are ok) with;
 ```
 yarn add --dev @openzeppelin/contracts
 yarn hardhat compile
