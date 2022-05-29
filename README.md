@@ -36,3 +36,13 @@ how they are diff in each tool)
 yarn add --dev @openzeppelin/contracts
 yarn hardhat compile
 ```
+
+compiling generates the artifacts
+
+# Voting mechanism
+an erc20 token is used to vote in the dao
+
+# Contracts
+there is alot going on in the governance contract but of course we use the tested and proven 
+openzepplin library. as I continue to make doas the various interactionsbetween then should become
+more clear but suffice it to say that the 
