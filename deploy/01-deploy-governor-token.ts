@@ -5,7 +5,7 @@ import { DeployFunction } from "hardhat-deploy/types"
 const deployGovernanceToken: DeployFunction = async function (
   hre: HardhatRuntimeEnvironment
 ) {
-  console.log("what up tho Bro");
+  const { getNamedAccounts, deployments, network } = hre;
 };
 
 export default deployGovernanceToken;
