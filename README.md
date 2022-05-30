@@ -46,3 +46,52 @@ an erc20 token is used to vote in the dao
 there is alot going on in the governance contract but of course we use the tested and proven 
 openzepplin library. as I continue to make doas the various interactionsbetween then should become
 more clear but suffice it to say that the 
+
+## compiling contracts
+if there are errors in compilation check the hardhat config to make sure
+that the solidity versions are correct
+```
+yarn hardhat compile
+```
+
+# Deploy Contracts
+add ethers and the deploy script:
+Since hardhat-deploy-ethers is a fork of @nomiclabs/hardhat-ethers and that other plugin might have
+an hardcoded dependency on @nomiclabs/hardhat-ethers the best way to install hardhat-deploy-ethers
+and ensure compatibility is the following:
+```
+yarn add --dev  @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+```
+
+also add hardhat
+```
+yarn add --dev hardhat-deploy
+```
+
+ ## creae a deploy folder
+ custom deploy script is necessary because of the way the smart contract ownership architecture
+ for this tutorial the deploy scripts are written in typescript the hardhat.config.js now becomes .tss
+
+# Using TYpescript
+typescript dependencies
+```
+yarn add --dev
+typescript
+typechain 
+ts-node
+@typechain/ethers-v5
+@typechain/hardhat
+@types/chai 
+@types/node
+```
+
+you will need to import these in various files including the hardhat config in order to
+use these methods
+
+# 01-deploy-governor-token
+
+this file imports hardhat deploy which is used to pass the test enviornment 
+```
+import { hardhatRuntimeEnvironment } from "hardhat/types"
+import { DeployFunctions } from "hardhat/deploy"
+```
