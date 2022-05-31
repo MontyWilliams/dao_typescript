@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types"
 import { DeployFunction } from "hardhat-deploy/types"
-import { MIN_DELAY } from "../helper-hardhat-config"
+import { MIN_DELAY } from "../helper-hardhat-config"      //used to set the time
 
 const deployTimeLock: DeployFunction = async function (
   hre: HardhatRuntimeEnvironment
