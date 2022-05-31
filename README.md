@@ -63,7 +63,7 @@ and ensure compatibility is the following:
 yarn add --dev  @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 ```
 
-also add hardhat
+also add hardhat deploy
 ```
 yarn add --dev hardhat-deploy
 ```
@@ -95,3 +95,15 @@ this file imports hardhat deploy which is used to pass the test enviornment
 import { hardhatRuntimeEnvironment } from "hardhat/types"
 import { DeployFunctions } from "hardhat/deploy"
 ```
+
+### connecting to local host vs hardhat network
+```
+yarn hardhat node 
+```
+connects to local host
+
+# Delegating votes
+
+delegating votes is handled by the open zepplin implementation of the erc20 contract which provides a method for handleing
+address that have voting abilities. checkpoints which are like snap shots of the chain at a given moment are a crucial part of this 
+process
