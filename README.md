@@ -72,6 +72,17 @@ yarn add --dev hardhat-deploy
  custom deploy script is necessary because of the way the smart contract ownership architecture
  for this tutorial the deploy scripts are written in typescript the hardhat.config.js now becomes .tss
 
+ ### hardhat config notes
+ had an issue gas limit so i had to configure the hardhat settings
+ ```
+ networks: {
+    hardhat: {
+      allowUnlimitedContractSize: true
+    }
+  },
+  ```
+
+
 # Using TYpescript
 typescript dependencies
 ```
