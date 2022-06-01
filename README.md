@@ -118,3 +118,7 @@ connects to local host
 delegating votes is handled by the open zepplin implementation of the erc20 contract which provides a method for handleing
 address that have voting abilities. checkpoints which are like snap shots of the chain at a given moment are a crucial part of this 
 process
+
+# Proposal prosses
+
+the propose function comes from the open zepplin library governance contract Governer.sol
