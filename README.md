@@ -122,3 +122,14 @@ process
 # Proposal prosses
 
 the propose function comes from the open zepplin library governance contract Governer.sol
+it takes 4 parameters: targets, values, aclldata, description
+
+### Proposal state
+In the governor contract ther proposals are in a one of several states at any time
+these states describe the status of all proposals whithin a contract
+quarm rech and vote succeeded means that the vote suceded
+
+# Voting 
+### voting with signatures
+this method will allow voters to make all votes and the doa to pay for the results to go on chain 
+there are many different voting methods and this wil be the key to making doas the new standard for llc's

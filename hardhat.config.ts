@@ -13,20 +13,27 @@ const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      chainId: 3137,
-      allowUnlimitedContractSize: true
+      chainId: 31337
     },
     localhost: {
-      chainId: 3137,
-      allowUnlimitedContractSize: true
+      chainId: 31337
+    }
+  },
+  solidity: {
+    version: "0.8.9",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
     },
   },
-  solidity: "0.8.9",
   namedAccounts: {
-    deployer: {           // the [0] account is named default
-      default: 0,
-    },
-  },
+    deployer: {
+      // the [0] account is named default
+      default: 0
+    }
+  }
 };
 
 export default config;
